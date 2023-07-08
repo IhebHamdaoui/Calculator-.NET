@@ -1,0 +1,48 @@
+﻿<Window x:Class="Jaddad_Zizi_Hamdaoui.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Jaddad_Zizi_Hamdaoui"
+        mc:Ignorable="d"
+        Title="Calculatrice" Height="494" Width="360" Background="#FFE0DCDC">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="90*"/>
+            <ColumnDefinition Width="90*"/>
+            <ColumnDefinition Width="90*"/>
+            <ColumnDefinition Width="90*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="194*"/>
+            <RowDefinition Height="57*"/>
+            <RowDefinition Height="57*"/>
+            <RowDefinition Height="57*"/>
+            <RowDefinition Height="57*"/>
+            <RowDefinition Height="57*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="egal" Content="=" HorizontalAlignment="Center" Grid.Row="5" VerticalAlignment="Center" Height="53" Width="85"  FontWeight="Bold" FontSize="36" Background="#FFA1B7FF" Click="egal_Click" />
+        <Button x:Name="virgule" Grid.Column="1" Content="." HorizontalAlignment="Center" Grid.Row="5" VerticalAlignment="Center" Height="53" Width="85" FontWeight="Bold" FontSize="22" Background="White" Click="virgule_Click" />
+        <Button x:Name="numZero"  Grid.Column="2" Content="0" HorizontalAlignment="Center" Grid.Row="5" VerticalAlignment="Center" FontSize="36" FontWeight="Bold" Background="White" Width="85" Height="53" Click="numZero_Click"/>
+        <Button x:Name="numUn"  Content="1" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Background="White" Height="53" Width="85" FontWeight="Bold" FontSize="36" Click="numUn_Click" />
+        <Button x:Name="numDeux"  Grid.Column="1" Content="2" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" FontSize="36" FontWeight="Bold" Background="White" Height="53" Width="86" Click="numDeux_Click"/>
+        <Button x:Name="numTrois"  Grid.Column="2" Content="3" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Height="53" Width="85" Background="White" FontSize="36" FontWeight="Bold" Click="numTrois_Click"/>
+        <Button x:Name="numQuatre"  Content="4" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Background="White" FontSize="36" FontWeight="Bold" Height="53" Width="85" Click="numQuatre_Click"/>
+        <Button x:Name="numCinq"  Grid.Column="1" Content="5" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Height="53" Width="85" Background="White" FontSize="36" FontWeight="Bold" Click="numCinq_Click"/>
+        <Button x:Name="numSix"  Grid.Column="2" Content="6" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Background="White" FontSize="36" FontWeight="Bold" Height="53" Width="85" Click="numSix_Click"/>
+        <Button x:Name="numSept"  Content="7" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" FontSize="36" FontWeight="Bold" Background="White" Width="85" Height="53" Click="numSept_Click"/>
+        <Button x:Name="numHuit"  Grid.Column="1" Content="8" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" FontSize="36" FontWeight="Bold" Background="White" Width="85" Height="53" Click="numHuit_Click"/>
+        <Button x:Name="numNeuf"  Grid.Column="2" Content="9" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" FontSize="36" FontWeight="Bold" Background="#FFFEFEFE" Width="85" Height="53" Click="numNeuf_Click"/>
+        <Button x:Name="efface"  Grid.Column="3" Content="c" HorizontalAlignment="Center" Grid.Row="5" VerticalAlignment="Center" FontSize="36" Width="85" Height="53" Click="efface_Click" />
+        <Button x:Name="plus" Grid.Column="3" Content="+" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" FontSize="36" Height="53" Width="85" Click="plus_Click" />
+        <Button x:Name="moins" Grid.Column="3" Content="-" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" FontSize="36" Width="85" Height="53" Click="moins_Click" />
+        <Button x:Name="multiplication" Grid.Column="3" Content="x" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" FontSize="36" Width="85" Height="53" Click="multiplication_Click" />
+        <Button x:Name="division" Grid.Column="3" Content="/" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Center" FontSize="36" Width="86" Height="53" Click="division_Click" />
+        <Button x:Name="modulo" Grid.Column="1" Content="%" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontSize="36" Width="85" Height="53" Click="modulo_Click"/>
+        <Button x:Name="factoriel" Content="n!" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontSize="36" Width="85" Height="53" Click="factoriel_Click"  />
+        <Button x:Name="inverse" Grid.Column="2" Content="1/x" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontSize="20" Width="85" Height="53" Click="inverse_Click" />
+        <TextBox x:Name="affichage" Background="#FFE0DCDC"   HorizontalAlignment="Right" Margin="0,59,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" Width="360" Grid.ColumnSpan="4" Height="135" TextAlignment="Right" FontStyle="Italic" FontStretch="Normal"  Grid.RowSpan="2" BorderBrush="#FFC5C3C3"/>
+        <TextBox x:Name="saisie" Background="#FFE0DCDC" Grid.ColumnSpan="4" HorizontalAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" FontSize="20" Height="65" TextAlignment="Right" BorderBrush="#FFDCDADA"/>
+
+    </Grid>
+</Window>
